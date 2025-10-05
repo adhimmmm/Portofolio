@@ -63,7 +63,7 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin-bottom: 1rem;
-    
+
 }
 
 .avatar {
@@ -90,13 +90,45 @@ a {
     width: 100%;
 }
 
-.contact-info p {
-    margin-bottom: 0.7rem;
-    padding: 0.4rem 0.6rem;
+.contact a:hover {
+    color: #fff;
+}
+
+.contact-info .contact {
     background-color: #121212;
-    color: #eee;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    border-radius: 6px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.6rem;
+}
+
+.contact-info .social-media {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.contact-info .social-media-icon {
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #f39c12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info .social-media-icon:hover {
+    transform: translateY(-2px);
 }
 
 /* Main content */
@@ -167,18 +199,129 @@ a {
     color: #ccc;
 }
 
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.skill-list .skill {
+    background-color: #2e2e2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-list .skill img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+.skill-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-description h3 {
+    margin-bottom: .2rem;
+}
+
+.skill-list .skill:hover {
+    background-color: #3a3a3a;
+    transform: translateY(-2px);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skills h2,
+.clients h2 {
+    margin-top: 3rem;
+}
+
+/* Mengatur kontainer utama carousel */
+.swiper {
+    width: 100%;
+    /* Atur lebar sesuai keinginan Anda */
+    margin: 0 auto;
+}
+
+/* Mengatur setiap slide (tempat foto) */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    /* Untuk menyusun konten di dalamnya (jika ada) */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* Tambahkan sudut membulat */
+}
+
+/* Mengatur gaya gambar di dalam slide */
+.swiper-slide img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    /* Tambahkan sudut membulat pada gambar */
+}
+
+
+/* education and experince */
+.education li,
+.experience li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1px;
+    margin-bottom: 15px;
+}
+
+.education p,
+.experience p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* tech */
+.tech-container {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    margin-top: 1rem;
+}
+
+.tech {
+    background-color: #2e2e2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech:hover {
+    background-color: #3a3a3a;
+    transform: translateY(-2px);
+    transition: background-color 0.3s, transform 0.1s;
+}
+
 /* Cards */
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .card {
     flex: 1;
     min-width: 220px;
     background: #181818;
-    padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s, background 0.3s;
@@ -199,6 +342,156 @@ a {
     font-size: 0.9rem;
 }
 
+.porto-img {
+    background: #000;
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 0 20px 0;
+    margin-bottom: .5rem;
+}
+
+.porto-des {
+    padding: 0.4rem 0.6rem;
+}
+
+
+/* certificate */
+.certificate-img {
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+    /* border-radius: 20px; */
+    margin-bottom: .5rem;
+}
+
+.card-certificate {
+    padding: 10px;
+    flex: 1;
+    min-width: 220px;
+    background: #181818;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px rgba(0.4, 0.4, 0.4, 0.4);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card-certificate:hover {
+    transform: translateY(-5px);
+    background: #202020;
+}
+
+/* popup modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+
+/* Contact */
+.maps {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    aspect-ratio: 20 / 9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.maps .goggle-maps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    background: #181818;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1.5px solid #1c1c1c;
+    background-color: #000;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.btn-send {
+    width: 100%;
+    padding: 12px;
+    background: #1c1c1c;
+    color: white;
+    border: 1.5px solid #f39c12;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-send:hover {
+    background: #f39c12;
+}
+
 /* Animasi fade */
 .fade {
     opacity: 1;
@@ -207,4 +500,8 @@ a {
 
 .fade.hide {
     opacity: 0;
+}
+
+.hidden {
+    display: none;
 }

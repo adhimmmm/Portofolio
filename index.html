@@ -1,57 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Fauzil Adhim</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile">
-        <div class="image">
-            <img src="profile.jpeg" alt="avatar" class="avatar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Fauzil Adhim</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link swipper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="image">
+            <img src="profile.jpeg" alt="avatar" class="avatar" />
+          </div>
+          <h2>Fauzil Adhim</h2>
+          <p class="role">Web Developer</p>
         </div>
-        <h2>Fauzil Adhim</h2>
-        <p class="role">Web Developer</p>
-      </div>
-      <div class="contact-info">
-        <p>📧 richard@example.com</p>
-        <p>📞 +1 (321) 252-2796</p>
-        <p>📍 Sydney, Australia</p>
-        <p>🎂 June 25, 1991</p>
-      </div>
-    </aside>
+        <div class="contact-info">
+          <div class="contact">
+            <img src="img/profile-icon/mail.png" alt="" width="20px" />
+            <a href="">
+              <p>fauziladhim720@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact">
+            <img src="img/profile-icon/telephone.png" alt="" width="20px" />
+            <a href="">
+              <p>+62 823 394 0952</p>
+            </a>
+          </div>
+          <div class="contact">
+            <img src="img/profile-icon/location.png" alt="" width="20px" />
+            <p>Malang, Indonesia</p>
+          </div>
+          <div class="social-media">
+            <div>
+              <a href="" class="social-media-icon">
+                <img src="img/profile-icon/instagram.png" alt="" width="20px" />
+              </a>
+            </div>
+            <div>
+              <a href="" class="social-media-icon">
+                <img src="img/profile-icon/linkedin.png" alt="" width="20px" />
+              </a>
+            </div>
+            <div>
+              <a href="" class="social-media-icon">
+                <img src="img/profile-icon/github.png" alt="" width="20px" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
 
-    <!-- Main content -->
-    <main class="main-content">
-      <!-- Navigation -->
-      <nav class="navbar">
-        <ul>
-          <li><a href="#about" class="active" data-section="about">About</a></li>
-          <li><a href="#resume" data-section="resume">Resume</a></li>
-          <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
-          <li><a href="#blog" data-section="blog">Blog</a></li>
-          <li><a href="#contact" data-section="contact">Contact</a></li>
-        </ul>
-      </nav>
+      <!-- Main content -->
+      <main class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+          <ul>
+            <li><a href="#about" class="active" data-section="about">About</a></li>
+            <li><a href="#resume" data-section="resume">Resume</a></li>
+            <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+            <li><a href="#certificate" data-section="certificate">Certificate</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+          </ul>
+        </nav>
 
-      <!-- Dynamic Content -->
-      <section id="dynamic-content" class="section fade">
-        <h1>About Me</h1>
-        <p>
-          I'm a Creative Director and UI/UX Designer from Sydney, Australia,
-          working in web development and print media.
-        </p>
-        <p>
-          I enjoy turning complex problems into simple, beautiful and intuitive designs.
-        </p>
-      </section>
-    </main>
-  </div>
+        <!-- Dynamic Content -->
+        <section id="dynamic-content" class="section fade"></section>
 
-  <script src="script.js"></script>
-</body>
+        <!-- about section start -->
+        <section id="about" class="hidden">
+          <div class="about-me">
+            <h1>About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, iste? Est totam blanditiis dolorem cupiditate, excepturi possimus laboriosam ullam quisquam adipisci odit distinctio numquam commodi praesentium esse quaerat
+              eos culpa maxime laborum alias libero soluta laudantium? Vel, nemo error. Veritatis ut harum nobis voluptatibus neque quidem voluptates quam dolore labore.
+            </p>
+          </div>
+          <div class="skills">
+            <h2>What I'm Doing</h2>
+            <div class="skill-list">
+              <div class="skill">
+                <img src="img/icon/web.png" alt="" width="50px" />
+                <div class="skill-description">
+                  <h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet sdfsd fsdfs.</p>
+                </div>
+              </div>
+              <div class="skill">
+                <img src="img/icon/web.png" alt="" width="50px" />
+                <div class="skill-description">
+                  <h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet sdfsd fsdfs.</p>
+                </div>
+              </div>
+              <div class="skill">
+                <img src="img/icon/web.png" alt="" width="50px" />
+                <div class="skill-description">
+                  <h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet sdfsd fsdfs.</p>
+                </div>
+              </div>
+              <div class="skill">
+                <img src="img/icon/web.png" alt="" width="50px" />
+                <div class="skill-description">
+                  <h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet sdfsd fsdfs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="clients">
+              <h2>Clients</h2>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/profile-icon/facebook.png" alt="Client 1" /></div>
+                  <div class="swiper-slide"><img src="img/profile-icon/github.png" alt="Client 2" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about section end -->
+
+        <!-- resume Start -->
+        <section id="resume" class="hidden">
+          <h1>Resume</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, iste? Est totam blanditiis dolorem cupiditate, excepturi possimus laboriosam ullam quisquam adipisci odit distinctio numquam commodi praesentium esse quaerat eos
+            culpa maxime laborum alias libero soluta laudantium? Vel, nemo error. Veritatis ut harum nobis voluptatibus neque quidem voluptates quam dolore labore.
+          </p>
+          <div class="education">
+            <h1>Education</h1>
+            <ul>
+              <li>
+                <h3>Bachelor of Computer Science</h3>
+                <p>2010 - 2014</p>
+                <p>University of Example</p>
+              </li>
+              <li>
+                <h3>Master of Information Technology</h3>
+                <p>2010 - 2014</p>
+                <p>Institute of Sample, 2015 - 2017</p>
+              </li>
+              <li>
+                <h3>PhD in Software Engineering</h3>
+                <p>2010 - 2014</p>
+                <p>Example Tech University, 2018 - 2022</p>
+              </li>
+            </ul>
+          </div>
+          <div class="experience">
+            <h2>Experience</h2>
+            <ul>
+              <li>
+                <h3>Bachelor of Computer Science</h3>
+                <p>2010 - 2014</p>
+                <p>University of Example</p>
+              </li>
+              <li>
+                <h3>Master of Information Technology</h3>
+                <p>2010 - 2014</p>
+                <p>Institute of Sample, 2015 - 2017</p>
+              </li>
+              <li>
+                <h3>PhD in Software Engineering</h3>
+                <p>2010 - 2014</p>
+                <p>Example Tech University, 2018 - 2022</p>
+              </li>
+            </ul>
+          </div>
+          <div class="Tech">
+            <h2>My Skill</h2>
+            <div class="tech-container">
+              <div class="tech">
+                <img src="img/tech-icon/html.png" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/css-3.png" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/js.png" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/php-6.svg" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/java.svg" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/python-5.svg" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/tailwind-css.png" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/laravel.png" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/laragon.svg" alt="" width="50px" />
+              </div>
+              <div class="tech">
+                <img src="img/tech-icon/python-5.svg" alt="" width="50px" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- resume end -->
+
+        <!-- portofolio start -->
+        <section id="portfolio" class="hidden">
+          <h1>Portfolio</h1>
+          <p>Some of my latest projects:</p>
+
+          <div class="cards">
+            <a href="">
+              <div class="card">
+                <img class="porto-img" src="img/icon/iPhone 15.png" alt="" />
+                <div class="porto-des">
+                  <h3>Project A</h3>
+                  <p>Web Design project for startup.</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card">
+                <img class="porto-img" src="img/icon/iPhone 15.png" alt="" />
+                <div class="porto-des">
+                  <h3>Project A</h3>
+                  <p>Web Design project for startup.</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card">
+                <img class="porto-img" src="img/icon/iPhone 15.png" alt="" />
+                <div class="porto-des">
+                  <h3>Project A</h3>
+                  <p>Web Design project for startup.</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card">
+                <img class="porto-img" src="img/icon/iPhone 15.png" alt="" />
+                <div class="porto-des">
+                  <h3>Project A</h3>
+                  <p>Web Design project for startup.</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card">
+                <img class="porto-img" src="img/icon/iPhone 15.png" alt="" />
+                <div class="porto-des">
+                  <h3>Project A</h3>
+                  <p>Web Design project for startup.</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card">
+                <img class="porto-img" src="img/icon/iPhone 15.png" alt="" />
+                <div class="porto-des">
+                  <h3>Project A</h3>
+                  <p>Web Design project for startup.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- portofolio end -->
+
+        <!-- sertifikat start -->
+        <section id="certificate" class="hidden">
+          <h1>Certificate</h1>
+          <p>Sharing my thoughts and tutorials about web development.</p>
+
+          <div class="cards">
+            <a href="">
+              <div class="card-certificate">
+                <img class="certificate-img" src="img/certificate-img/sertifikat.png" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="card-certificate">
+                <img class="certificate-img" src="img/certificate-img/sertifikat.png" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="card-certificate">
+                <img class="certificate-img" src="img/certificate-img/sertifikat.png" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="card-certificate">
+                <img class="certificate-img" src="img/certificate-img/sertifikat.png" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="card-certificate">
+                <img class="certificate-img" src="img/certificate-img/sertifikat.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- modal Popup start -->
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="popupImage" />
+        </div>
+        <!-- modal Popup end -->
+        <!-- sertifikat end -->
+
+        <!-- contact start -->
+        <section id="contact" class="hidden">
+          <h1>Contact</h1>
+
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63227.94537054426!2d112.52526712167969!3d-7.9215168999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7881f5405daac1%3A0xb39e4847109109e4!2sUniversitas%20Muhammadiyah%20Malang%20(UMM%20III)!5e0!3m2!1sid!2sid!4v1759658016155!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="goggle-maps"
+            ></iframe>
+          </div>
+
+          <h2>Contact form</h2>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What’s this about?" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-send">Send Message</button>
+            </form>
+          </div>
+        </section>
+        <!-- contact end -->
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
